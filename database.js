@@ -1,5 +1,6 @@
 const database = {
     cattleTypes: [
+        
         {
             id: 1,
             breed: "American Angus"

@@ -25,6 +25,9 @@ Here are your learning objectives for this self-assessment.
 1. Able to use the debugger to step through existing code to discover root causes of bugs.
 2. Drawing a sequence diagram for a project.
    > Use the [sequencediagram.org](https://sequencediagram.org/) site to generate your sequence diagram. Make sure you save your work as you go.
+
+https://sequencediagram.org/index.html#initialData=C4S2BsFMAICEFcDm0BKBDAdgYwBbQFD4CyaIGAtAHwAiATgPYBuktAzgFxZrhQAm0vBszbQAvNBwhakOkxasAFF2ARIAFXp0QzAJQESZADzlys4R2nB4ItLVpoAntHoAzZwCMAVpCzBW0FwYAWwE0YDR3NFZIADpBORFiUgpKAGEw1U5uPmhlVTFoBngMXngAByUMqA0tXSSjE3SVKHZLa39beydXQsxeehC8qGh3aUhef2ioXzJkQIHQ8MjomKH1BzLIf3qUgCl6awxIByyecehPA9ojp3FLw+OSAGsWBR0d43J9h5O2m16SgMQAAvc6dRzONz0Lw+PzQWyQKKEZGEIA
+
 3. Demonstrate learning efficiency by researching concepts you haven't seen before using your peers, mentors, and the World Wide Web as resources.
 4. Awareness of when you need help, and then seeking it out.
 
@@ -76,23 +79,36 @@ Your journey will take you through the wildness of the American Midwest and acro
 ```
 
 1. In the **main** module, one of the first lines of code is `const drovers = hireDrovers(cattleToDrive)`. Explain what the value of the `drovers` variable is when that line of code runs.
-   > Your answer here
-2. At the bottom of the main module, you will see the following code - `for (const drover of drovers)`. Explain what the values of both the `drover` and the `drovers` variables are.
-   > Your answer here
+
+>The value of the variable drovers is an array of objects that returns randomized drivers to hire, given there are 50 drovers.  
+
+2. At the bottom of the main module, you will see the following code - for (const drover of drovers)`. Explain what the values of both the `drover` and the `drovers` variables are.
+
+>The drovers variable value is an array.  The variable drover has a value of an abject in the array of drovers. 
+
 3. In the **journey** module, there is a `journeyMaker()` function. In that function, there is a variable named `areas` which will have the value of an object. Use your debugger to show what the value of each key is on that object. Use [Loom](https://www.loom.com) to record your session.
-   > Your public Loom URL here
+
+>https://www.loom.com/share/6a8ee5f0e5264da0bcada03144649396
+
+
 4. Also in the **journey** module, there is the following code:
+ 
    ```js
    for (let forestNumber = 0; forestNumber < areas.forests; forestNumber++) {
       journey.push("forest")
    }
    ```
    Explain this code with your best vocabulary.
-   > Your answer here
+   
+>This line of code is naming forestNumber  (could be taco), starting at 0 and iterating through the object areas, more specifically the property forest of areas, which has the value of a number from the createForest function and returns a random number.  In this for loop it pushes in the word forest each time and assigns it to the radom number the createForests function created. 
+
 5. Explain the value of the `database` variable in the **database** module. Be as comprehensive as possible.
-   > Your answer here
+    
+>This is the variable database, it is an object that contains 2 arrays, cattle types (containing 4 objects with 2 properties each, id and breed) and drovers (containing 50 objects with 4 properties each, id, first_name, last_name and gender) 
+
 6. In the **drovers** module, there is a `hireDrovers()` function. You will notice the following code on that line - `(herdSize)`. What is that defining, and where does it get its value?
-   > Your answer here
+
+> herd size is the parameter to the hireDrovers function, its value is a number, which changes each time the code runs
 
 ## When You Are Done
 
