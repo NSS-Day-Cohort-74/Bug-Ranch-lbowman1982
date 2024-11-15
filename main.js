@@ -35,21 +35,26 @@ console.log(`
 console.log(
   `You will be accompanying ${droverz} drovers as they drive ${cattleToDrive} cattle to Old Red's Ranch for grazing`
 );
+
+const cowBreedArry = []
+
 console.log(`\n The herd is made of up the following cattle: `)
 for (const animal of cattle) {
-    console.log(` ${animal.breed}, `)
-} 
+      cowBreedArry.push(animal.breed)
+}
+console.log(` ${cowBreedArry} \n `)
+// change for loop so that instead of console.log each breed, need to concinnate (with comma in between each) into a single sting and print one time
 
 // for (const drover of drovers)`. Explain what the values of both the `drover` and the `drovers` variables are.
 
 console.log(
-    `Here is the team of drovers you will be joining \t \n*`)
+    `Here is the team of drovers you will be joining `)
 for (const drover of drovers ) {
 
-      console.log(`${ drover.first_name} \n * ${ drover.last_name}`)
+      console.log(`\t *${ drover.first_name} ${ drover.last_name}`)
       }      
 
 console.log("\n\nYour journey will take you through the wildness of the American Midwest and across the following terrain")
 for (const areas of journey) {
-    console.log(`\t* ${areas}`)
+    console.log(` \t* ${areas} `)
 }  
